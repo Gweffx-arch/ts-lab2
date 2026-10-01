@@ -1,3 +1,7 @@
 ﻿import "bootstrap/dist/css/bootstrap.min.css";
+import { AppUI } from "./ui/AppUI";
 
-console.log("Ініціалізація додатку бібліотеки");
+document.addEventListener("DOMContentLoaded", () => {
+  const app = new AppUI();
+  app.init();
+});
